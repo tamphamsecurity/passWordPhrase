@@ -12,9 +12,11 @@ It includes:
 - [`pythonTests/test_passWordPhrase.py`](pythonTests/test_passWordPhrase.py): Unit tests for the generator.
 
 ## Requirements
-- Python 3.7+
+- Python 3.8+
 - `tkinter` (for GUI)
-- `flask` (for web app)
+- `fastapi` (for web framework)
+- `uvircorn` (for ASGI web server)
+
 
 ## Usage 
 Run from same directory as repo or fully qualify the path to the calling python file.
@@ -34,11 +36,11 @@ Run from same directory as repo or fully qualify the path to the calling python 
 
 
 ### Web Server
-    1. Start flask web server
+    1. Start  web server
         python password_web.py
     2. Access and run the web client via your favorite browser
     You will be able to generate 1 to 20 passwords and save it out to a file.
-        http://127.0.0.1:5000/
+        http://localhost:5000/
 
 
 ### API
